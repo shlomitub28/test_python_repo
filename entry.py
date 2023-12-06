@@ -16,5 +16,10 @@ def main():
     df = pd.DataFrame({"column1": [1, 2, 3], "column2": [4, 5, 6]})
     print(df.head())
 
+    import camelcase
+    c = camelcase.CamelCase()
+    txt = "hello world"
+    print(c.hump(txt))
+
 if __name__ == "__main__":
     main()
