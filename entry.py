@@ -16,7 +16,7 @@ def main():
     df = pd.DataFrame({"column1": [1, 2, 3], "column2": [4, 5, 6]})
     print(df.head())
 
-    subprocess.call([sys.executable, '-r level1/requirements.txt', 'pip', 'install'])
+    subprocess.call([sys.executable, '-r level1/requirements2.txt', 'pip', 'install'])
     import camelcase
     c = camelcase.CamelCase()
     txt = "hello world"
