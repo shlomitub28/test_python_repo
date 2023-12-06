@@ -4,6 +4,7 @@ def main():
 
     # Install libraries from requirements.txt in the Git repository
     import subprocess
+    import sys
     subprocess.call([sys.executable, '-r requirements.txt', 'pip', 'install'])
     
     #%pip install -r requirements.txt
