@@ -3,7 +3,10 @@ def main():
     # Your Python code here
 
     # Install libraries from requirements.txt in the Git repository
-    %pip install -r requirements.txt
+    import subprocess
+    subprocess.call([sys.executable, '-r requirements.txt', 'pip', 'install'])
+    
+    #%pip install -r requirements.txt
 
     # Continue with your code
     import pandas as pd
