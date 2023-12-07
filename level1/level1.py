@@ -2,7 +2,8 @@ import subprocess
 import sys
 import os
 os.chdir("../")
-subprocess.call([sys.executable, '-r requirements.txt', 'pip', 'install'])    
+subprocess.call([sys.executable, '-r requirements.txt', 'pip', 'install']) 
+dbutils.library.installPyPI("camelcase")   
 import camelcase
 c = camelcase.CamelCase()
 txt = "hello world"
