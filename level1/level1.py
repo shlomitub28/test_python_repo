@@ -3,7 +3,7 @@ import sys
 import os
 os.chdir("../")
 subprocess.call([sys.executable, '-r requirements.txt', 'pip', 'install']) 
-dbutils.library.installPyPI("camelcase")   
+dbutils.library.restartPython()  
 import camelcase
 c = camelcase.CamelCase()
 txt = "hello world"
